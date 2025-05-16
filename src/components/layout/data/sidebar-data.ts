@@ -30,19 +30,19 @@ export const sidebarData: SidebarData = {
   },
   teams: [
     {
-      name: 'Shadcn Admin',
+      name: 'ARMA Admin',
       logo: Command,
-      plan: 'Vite + ShadcnUI',
+      plan: '',
     },
     {
-      name: 'Acme Inc',
+      name: 'ARMA Accounts',
       logo: GalleryVerticalEnd,
-      plan: 'Enterprise',
+      plan: '',
     },
     {
-      name: 'Acme Corp.',
+      name: 'ARMA Directors',
       logo: AudioWaveform,
-      plan: 'Startup',
+      plan: '',
     },
   ],
   navGroups: [
@@ -54,24 +54,24 @@ export const sidebarData: SidebarData = {
           url: '/',
           icon: IconLayoutDashboard,
         },
+        // {
+        //   title: 'Tasks',
+        //   url: '/tasks',
+        //   icon: IconChecklist,
+        // },
+        // {
+        //   title: 'Apps',
+        //   url: '/apps',
+        //   icon: IconPackages,
+        // },
+        // {
+        //   title: 'Chats',
+        //   url: '/chats',
+        //   badge: '3',
+        //   icon: IconMessages,
+        // },
         {
-          title: 'Tasks',
-          url: '/tasks',
-          icon: IconChecklist,
-        },
-        {
-          title: 'Apps',
-          url: '/apps',
-          icon: IconPackages,
-        },
-        {
-          title: 'Chats',
-          url: '/chats',
-          badge: '3',
-          icon: IconMessages,
-        },
-        {
-          title: 'Users',
+          title: 'Customers',
           url: '/users',
           icon: IconUsers,
         },
