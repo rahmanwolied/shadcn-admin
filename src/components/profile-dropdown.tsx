@@ -1,4 +1,5 @@
 import { Link } from '@tanstack/react-router'
+import { useAuthStore } from '@/stores/authStore'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 import { Button } from '@/components/ui/button'
 import {
@@ -13,6 +14,8 @@ import {
 } from '@/components/ui/dropdown-menu'
 
 export function ProfileDropdown() {
+  const { auth } = useAuthStore()
+
   return (
     <DropdownMenu modal={false}>
       <DropdownMenuTrigger asChild>
@@ -26,9 +29,11 @@ export function ProfileDropdown() {
       <DropdownMenuContent className='w-56' align='end' forceMount>
         <DropdownMenuLabel className='font-normal'>
           <div className='flex flex-col space-y-1'>
-            <p className='text-sm leading-none font-medium'>satnaing</p>
+            <p className='text-sm leading-none font-medium'>
+              {auth.user?.role}
+            </p>
             <p className='text-muted-foreground text-xs leading-none'>
-              satnaingdev@gmail.com
+              {auth.user?.email}
             </p>
           </div>
         </DropdownMenuLabel>

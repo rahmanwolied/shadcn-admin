@@ -245,7 +245,7 @@ export function UsersActionDialog({ currentRow, open, onOpenChange }: Props) {
                   </FormItem>
                 )}
               />
-              <FormField
+              {/* <FormField
                 control={form.control}
                 name='role'
                 render={({ field }) => (
@@ -266,7 +266,7 @@ export function UsersActionDialog({ currentRow, open, onOpenChange }: Props) {
                     <FormMessage className='col-span-4 col-start-3' />
                   </FormItem>
                 )}
-              />
+              /> */}
               <FormField
                 control={form.control}
                 name='password'

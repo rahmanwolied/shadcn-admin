@@ -94,7 +94,7 @@ export function UsersInviteDialog({ open, onOpenChange }: Props) {
                 </FormItem>
               )}
             />
-            <FormField
+            {/* <FormField
               control={form.control}
               name='role'
               render={({ field }) => (
@@ -112,7 +112,7 @@ export function UsersInviteDialog({ open, onOpenChange }: Props) {
                   <FormMessage />
                 </FormItem>
               )}
-            />
+            /> */}
             <FormField
               control={form.control}
               name='desc'

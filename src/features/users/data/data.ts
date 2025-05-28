@@ -6,14 +6,17 @@ import {
 } from '@tabler/icons-react'
 import { UserStatus } from './schema'
 
+export type CowCategories = 'gold' | 'platinum' | 'silver'
+
 export const callTypes = new Map<UserStatus, string>([
-  ['active', 'bg-teal-100/30 text-teal-900 dark:text-teal-200 border-teal-200'],
-  ['inactive', 'bg-neutral-300/40 border-neutral-300'],
-  ['invited', 'bg-sky-200/40 text-sky-900 dark:text-sky-100 border-sky-300'],
-  [
-    'suspended',
-    'bg-destructive/10 dark:bg-destructive/50 text-destructive dark:text-primary border-destructive/10',
-  ],
+  ['old', 'bg-green-100/30 text-teal-900 dark:text-teal-200 border-teal-200'],
+  ['new', 'bg-red-300/40 border-neutral-300'],
+])
+
+export const cowTypes = new Map<CowCategories, string>([
+  ['platinum', 'bg-green-100/30 text-teal-900 dark:text-teal-200 border-teal-200'],
+  ['silver', 'bg-red-300/40 border-neutral-300'],
+  ['gold', 'bg-yellow-300/40 border-yellow-300'],
 ])
 
 export const userTypes = [

@@ -3,11 +3,11 @@ import { create } from 'zustand'
 
 const ACCESS_TOKEN = 'thisisjustarandomstring'
 
-interface AuthUser {
+export interface AuthUser {
   accountNo: string
   email: string
   role: string[]
-  exp: number
+  // exp: number
 }
 
 interface AuthState {
@@ -26,7 +26,11 @@ export const useAuthStore = create<AuthState>()((set) => {
   const initToken = cookieState ? JSON.parse(cookieState) : ''
   return {
     auth: {
-      user: null,
+      user: {
+        accountNo: '0',
+        email: 'admin@arma.com',
+        role: ['admin'],
+      },
       setUser: (user) =>
         set((state) => ({ ...state, auth: { ...state.auth, user } })),
       accessToken: initToken,

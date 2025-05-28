@@ -34,20 +34,18 @@ export function DataTableToolbar<TData>({
               column={table.getColumn('status')}
               title='Status'
               options={[
-                { label: 'Active', value: 'active' },
-                { label: 'Inactive', value: 'inactive' },
-                { label: 'Invited', value: 'invited' },
-                { label: 'Suspended', value: 'suspended' },
+                { label: 'Old', value: 'old' },
+                { label: 'New', value: 'new' },
               ]}
             />
           )}
-          {table.getColumn('role') && (
+          {/* {table.getColumn('role') && (
             <DataTableFacetedFilter
               column={table.getColumn('role')}
               title='Role'
               options={userTypes.map((t) => ({ ...t }))}
             />
-          )}
+          )} */}
         </div>
         {isFiltered && (
           <Button
