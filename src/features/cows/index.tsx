@@ -12,7 +12,7 @@ import UsersProvider from './context/users-context'
 import { userListSchema } from './data/schema'
 import { users } from './data/users'
 
-export default function Users() {
+export default function Cows() {
   // Parse user list
   const { auth } = useAuthStore()
   const customerList = userListSchema.parse(users)
@@ -31,12 +31,8 @@ export default function Users() {
       <Main>
         <div className='mb-2 flex flex-wrap items-center justify-between space-y-2'>
           <div>
-            <h2 className='text-2xl font-bold tracking-tight'>
-              Customers List
-            </h2>
-            <p className='text-muted-foreground'>
-              View all your customers here.
-            </p>
+            <h2 className='text-2xl font-bold tracking-tight'>Cows List</h2>
+            <p className='text-muted-foreground'>View all your cows here.</p>
           </div>
           <UsersPrimaryButtons />
         </div>

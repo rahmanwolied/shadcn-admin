@@ -2,15 +2,12 @@ import {
   IconBarrierBlock,
   IconBrowserCheck,
   IconBug,
-  IconChecklist,
   IconError404,
   IconHelp,
   IconLayoutDashboard,
   IconLock,
   IconLockAccess,
-  IconMessages,
   IconNotification,
-  IconPackages,
   IconPalette,
   IconServerOff,
   IconSettings,
@@ -20,6 +17,7 @@ import {
   IconUsers,
 } from '@tabler/icons-react'
 import { AudioWaveform, Command, GalleryVerticalEnd } from 'lucide-react'
+import { MdProductionQuantityLimits } from 'react-icons/md'
 import { type SidebarData } from '../types'
 
 export const sidebarData: SidebarData = {
@@ -64,15 +62,14 @@ export const sidebarData: SidebarData = {
         //   url: '/apps',
         //   icon: IconPackages,
         // },
-        // {
-        //   title: 'Chats',
-        //   url: '/chats',
-        //   badge: '3',
-        //   icon: IconMessages,
-        // },
+        {
+          title: 'Cows',
+          url: '/cows',
+          icon: MdProductionQuantityLimits,
+        },
         {
           title: 'Customers',
-          url: '/users',
+          url: '/customers',
           icon: IconUsers,
         },
       ],
